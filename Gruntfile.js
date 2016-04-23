@@ -1,29 +1,46 @@
+"use strict";
+
 module.exports = function(grunt) {
+  require("load-grunt-tasks")(grunt);
 
-    grunt.loadNpmTasks('grunt-contrib-less');
+  var config = {
+    pkg: grunt.file.readJSON("package.json"),
 
-    grunt.initConfig({
-        less: {
-            style: {
-                files: {
-                    "css/style.css": ["less/style.less"]
-                }
-            }
+    less: {
+      style: {
+        files: {
+          "css/style.css": "less/style.less"
         }
-    });
+      }
+    },
 
-    grunt.loadNpmTasks('grunt-contrib-watch');
+    postcss: {
+      options: {
+        processors: [
+          require("autoprefixer")({browsers: "last 2 versions"})
+        ]
+      },
+      style: {
+        src: "css/*.css"
+      }
+    },
 
-    grunt.initConfig({
-        watch: {
-            scripts: {
-                files: ['**/*.less'],
-                tasks: ['less'],
-                options: {
-                    livereload: true
-                },
-            },
+    watch: {
+      style: {
+        files: ["less/**/*.less"],
+        tasks: ["less", "postcss"],
+        options: {
+          spawn: false,
+          livereload: true
         }
-    });
+      }
+    }
+  };
+  
 
-}
+
+  // Не редактируйте эту строку
+  config = require("./.gosha")(grunt, config);
+
+  grunt.initConfig(config);
+};

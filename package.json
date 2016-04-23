@@ -1,17 +1,17 @@
 {
-  "name": "18339-sedona",
+  "name": "139413-pink",
   "version": "0.1.0",
   "private": true,
-  "description": "Обучающий проект «sedona» от HTML Academy",
-  "author": "Bipolar Disorder",
+  "description": "Обучающий проект «pink» от HTML Academy",
+  "author": "Евгений Евгений",
   "repository": {
     "type": "git",
-    "url": "git://github.com/up-htmlacademy/18339-sedona.git"
+    "url": "git://github.com/up-htmlacademy/139413-pink.git"
   },
   "bugs": {
-    "url": "https://github.com/up-htmlacademy/18339-sedona/issues"
+    "url": "https://github.com/up-htmlacademy/139413-pink/issues"
   },
-  "homepage": "https://github.com/up-htmlacademy/18339-sedona",
+  "homepage": "https://github.com/up-htmlacademy/139413-pink",
   "dependencies": {
     "autoprefixer": "6.1.x",
     "grunt": "0.4.x",
@@ -31,22 +31,5 @@
   },
   "engines": {
     "node": "^5.0.0"
-  },
-  "devDependencies": {
-    "autoprefixer": "^6.1.2",
-    "csscomb": "^3.1.8",
-    "grunt": "^0.4.5",
-    "grunt-closure-compiler": "0.0.21",
-    "grunt-combine-media-queries": "^1.0.19",
-    "grunt-contrib-clean": "^0.6.0",
-    "grunt-contrib-copy": "^0.8.2",
-    "grunt-contrib-cssmin": "^0.14.0",
-    "grunt-contrib-htmlmin": "^0.6.0",
-    "grunt-contrib-imagemin": "^1.0.0",
-    "grunt-contrib-less": "^1.1.0",
-    "grunt-contrib-uglify": "^0.11.0",
-    "grunt-contrib-watch": "^0.6.1",
-    "grunt-postcss": "^0.7.1",
-    "load-grunt-tasks": "^3.3.0"
   }
 }
