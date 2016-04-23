@@ -1,14 +1,106 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
+  <head>
     <meta charset="UTF-8">
     <title>Portfolio Naira Lalayan</title>
-    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="img/icon.png" rel="shortcut icon" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-
+      <nav class="main-menu">
+        <button class="main-menu__icon"></button>
+        <ul class="main-menu__items">
+          <li><a class="main-menu__item" href="#about">Обо мне</a></li>
+          <li><a class="main-menu__item" href="#project">Проекты</a></li>
+          <li><a class="main-menu__item" href="#contact">Контакты</a></li>
+        </ul>
+      </nav>
     </header>
-</body>
+    <div class="index-header">
+      <h1 class="index-header__title"><a name="about"></a>Привет!</h1>
+      <p class="index-header__content">Меня зовут Наира Лалаян, я начинающий веб-разработчик, а эта страница — мое портфолио. </p>
+    </div><!--index-header-->
+    <div class="skills">
+      <h2 class="skills__title">Мои навыки</h2>
+      <div class="skill-items">
+        <div class="skill-item">
+          <div class="skill-item__picture skill-item__picture--html"></div>
+          <p class="skill-item__content">HTML5 — аккуратно, логично, семантично и валидно</p>
+        </div>
+        <div class="skill-item">
+          <div class="skill-item__picture skill-item__picture--css"></div>
+          <p class="skill-item__content">CSS3 — кроссбраузерная и адаптивная верстка</p>
+        </div>
+        <div class="skill-item">
+          <div class="skill-item__picture skill-item__picture--less"></div>
+          <p class="skill-item__content">Владение препроцессором LESS</p>
+        </div>
+        <div class="skill-item">
+          <div class="skill-item__picture skill-item__picture--js"></div>
+          <p class="skill-item__content">Решаю несложные задачи на чистом JS или JQuery</p>
+        </div>
+        <div class="skill-item">
+          <div class="skill-item__picture skill-item__picture--bem"></div>
+          <p class="skill-item__content">Использую БЭМ по именнованию классов</p>
+        </div>
+        <div class="skill-item">
+          <div class="skill-item__picture skill-item__picture--git"></div>
+          <p class="skill-item__content">Использую систему контроля версий Git</p>
+        </div>
+        <div class="skill-item">
+          <div class="skill-item__picture skill-item__picture--grunt"></div>
+          <p class="skill-item__content">Оптимизация и сборка проекта на Grunt</p>
+        </div>
+        <div class="skill-item">
+          <div class="skill-item__picture skill-item__picture--ps"></div>
+          <p class="skill-item__content">Отличное владение ПО Adobe (Photoshop и Illustrator)</p>
+        </div>
+        <div class="skill-item">
+          <div class="skill-item__picture skill-item__picture--svg"></div>
+          <p class="skill-item__content">Адаптивные графика, ретина, работа с SVG.</p>
+        </div>
+      </div>
+    </div><!--skills-->
+    <div class="project-index">
+      <a name="project"></a>
+      <div class="project-index__title">Проекты</div>
+      <div class="project-preview">
+        <div class="project-preview__picture project-preview__picture--sedona"></div>
+        <div class="project-preview__body">
+          <p class="project-preview__title">Седона</p>
+          <p class="project-preview__content">Проект на курсах HTML Academy</p>
+        </div>
+      </div>
+      <div class="project-preview">
+        <div class="project-preview__picture project-preview__picture--sedona"></div>
+        <div class="project-preview__body">
+          <p class="project-preview__title">Седона</p>
+          <p class="project-preview__content">Проект на курсах HTML Academy</p>
+        </div>
+      </div>
+    </div><!--project-index-->
+    <div class="contact">
+      <a name="contact"></a>
+      <h2 class="contact__title">Контакты</h2>
+      <div class="contact__items">
+        <div class="contact__item">
+          <div class="contact__icon contact__icon--phone"></div>
+          <p class="contact__text contact__text--normal">Звоните</p>
+          <p class="contact__text contact__text--bold">мой номер</p>
+          <p class="contact__text contact__text--small">8(903) 292 49 02</p>
+        </div>
+        <div class="contact__item">
+          <div class="contact__icon contact__icon--mail"></div>
+          <p class="contact__text contact__text--normal">Пишите</p>
+          <p class="contact__text contact__text--bold">на почту</p>
+          <p class="contact__text contact__text--small"><a href="mailto:lalayan91naira@gmail.com">lalayan91naira&shy;@gmail.com</a></p>
+        </div>
+      </div>
+    </div><!--contact-->
+    <footer class="footer">
+      <span class="copyright">© 2016г. Лалаян Наира</span>
+    </footer>
+  </body>
 </html>
